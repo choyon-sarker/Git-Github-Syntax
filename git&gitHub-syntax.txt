@@ -1,0 +1,198 @@
+ 
+Git & GitHub tricks
+
+1.Commit is two step process,
+ 	1st change add -> then -> commit
+
+	{ status -> add -> commit -> push }
+
+2.check version of git
+	(git --version)
+
+3.configure setup
+	(git config --global user.name" ")
+	(git config --global user.email" ")
+
+ To see all list ,
+	(git config --list)
+
+4.clone & status ***
+	clone->cloning a repository on our local machine or global to local data/project files copy era
+	
+	(git clone -http copy link-)
+
+5.1 change directory or folder er moddhe enter krte
+	(cd)
+	directory(folder) change krte
+
+5.2 to exit directory or folder theke ber hye jete
+	(cd ..)
+
+6.terminal clear krte
+	(clear)
+
+7.all files to show (ls->list of files)
+	(ls)
+
+8.all files including hidden files 
+	(ls -a)
+
+9.display the status of the code
+	(git status)
+
+10.Add & Commit ***
+	add - add new or change files in our working directory to the git staging area
+	(git add -file name-)
+		or
+	(git add . ) ->for all files to add on stagging area
+
+	commit - it is the record of change
+	(git commit -m "some message")
+
+	to see all commits with hash
+	(git log) 
+
+11.untracked
+	new file that git doesn't yet track
+
+12.modified
+	changed
+
+13.staged
+	file is ready to be committed
+
+14.unmodified
+	unchanged
+
+15.push command ***
+	push - upload local repository content to remote repository 
+
+	(git push origin main)
+	
+	origin -> gitHub repository sometimes called origin
+	main -> gitHub page branch name
+	
+16.create directory
+	(mkdir)
+
+17. Init command
+	init -> used to create a new git repository 
+
+17.1 local repository to git repository 
+	(git init)
+
+17.2 first -> git remote or GitHub repository add krte hbe jetar name 'origin'
+	(git remote add origin -link-)
+
+17.3 to verify remote or repository
+	(git remote -v)
+
+17.4 to check branch
+	(git branch)
+
+17.5 to rename branch 
+	(git branch -M 'je name dibo like 'main'')
+
+17.6 push operation
+	(git push origin main)
+		or
+	(git push -u origin main) -> ak e project e long time work krle
+
+18.WorkFlow on Local Git
+	1.Github repository or file
+	2.clone it
+	3.changes 
+	4.add
+	5.commit
+	6.push it on GitHub
+
+19.Git Branches -> use when need two or more developer create the two or more different features in parallel
+
+19.1 to check branch
+	(git branch)
+
+19.2 to rename branch
+	(git branch -M main ) 
+		or
+	(git branch -M 'branch name jeta dite chacci')
+
+19.3 to navigate branch or ak branch theke onno branch e jete chaile
+	(git checkout 'branch name ')
+		or
+	(git checkout 'jei branch e jete chacci')
+
+19.4 to create new branch 
+	(git checkout -b 'new branch name'
+
+19.5 to delete branch 
+	(git branch -d 'branch name')
+	same branch e stay krle seta delete krte parbona . delete krte hle jetate stay krci seta bad diye onno sobgulo delete krte parbo
+
+19.6 push on branch
+	(git push origin 'branch name')
+
+20.1 Merging code way-1
+	to compare commits ,branches ,files &more
+	(git diff 'branch name')
+	
+	to merge two branches
+	(git merge 'branch name')
+
+20.2 merging using GitHub wibsite
+	pull request -> it lets you tell others about the changes you're pushed to a branch in a repository on github 
+	on GitHub website -> create a PR
+
+	on local repo vscode , to fetch and download content from a remore repository and immediately update the local repo to match that content.
+	(git pull origin main)
+
+20.3 Resolving Merge Conflicts
+	it an event that takes place when git is unable to automatically resolve differences in code between two commits
+	merge krlei hbe
+
+24. Undoing changes 
+
+	->staged changes -> add hyeche but commit hoinai or vule add kre felechi but akno commit krinai then
+	(git reset 'file name')
+	(git reset)
+	 
+	->commited changes (for one latest commit)
+	(git reset HEAD 
+
+	->commited changes (for many commits)
+	(git reset 'commit hash')
+	(git reset --hard 'commit hash') ->clear all commit expect where we want to go
+	
+25. Fork
+	a fork is a new repository that shares code and visibility settings with the original "upstream" repository
+	to create rough copy -> others code ke nijer account e tule niye asa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
