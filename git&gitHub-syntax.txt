@@ -51,6 +51,7 @@ Git & GitHub tricks
 
 	to see all commits with hash
 	(git log) 
+	(git log --all)
 
 11.untracked
 	new file that git doesn't yet track
